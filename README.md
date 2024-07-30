@@ -1,2 +1,2 @@
 # WebdriverIOTest
-This is a test repository where I learn webdriverIO test automation framework
+Test UI Automation using webdriverio, allure reporter and jenkins integration for pipeline test execution.
