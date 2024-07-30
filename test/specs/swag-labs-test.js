@@ -1,0 +1,26 @@
+describe("test", () => {
+  it("tests test", async () => {
+    await browser.setWindowSize(1450, 934)
+    await browser.url("https://www.saucedemo.com/v1/index.html")
+    await expect(browser).toHaveUrl("https://www.saucedemo.com/v1/index.html")
+    await browser.$("//*[@data-test=\"username\"]").click()
+    await browser.$("//*[@data-test=\"username\"]").setValue("standard_user")
+    await browser.$("//*[@data-test=\"password\"]").click()
+    await browser.$("//*[@data-test=\"password\"]").setValue("secret_")
+    await browser.$("//*[@data-test=\"password\"]").setValue("secret_sauce")
+    await browser.$("#login-button").click()
+    await expect(browser).toHaveUrl("https://www.saucedemo.com/v1/inventory.html")
+    await browser.$("//*[@id=\"inventory_container\"]/div/div[1]/div[3]/button").click()
+    await browser.$("//*[@id=\"shopping_cart_container\"]").click()
+    await expect(browser).toHaveUrl("https://www.saucedemo.com/v1/cart.html")
+    await browser.$("//*[@id=\"item_4_title_link\"]/div").click()
+    await expect(browser).toHaveUrl("https://www.saucedemo.com/v1/inventory-item.html?id=4")
+    await browser.$("//*[@id=\"inventory_item_container\"]/div/button").click()
+    await browser.url("https://www.saucedemo.com/v1/cart.html")
+    await expect(browser).toHaveUrl("https://www.saucedemo.com/v1/cart.html")
+    await browser.$("//*[@id=\"cart_contents_container\"]/div/div[1]/div[3]/div[2]/div[2]/button").click()
+    await browser.$("//*[@id=\"menu_button_container\"]/div/div[3]/div/button").click()
+    await browser.$("#logout_sidebar_link").click()
+    await expect(browser).toHaveUrl("https://www.saucedemo.com/v1/index.html")
+  });
+});

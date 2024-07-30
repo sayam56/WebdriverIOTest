@@ -25,7 +25,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/contact-us.spec.js'
+        './test/specs/swag-labs-test.js'
     ],
     // Patterns to exclude.
     exclude: [

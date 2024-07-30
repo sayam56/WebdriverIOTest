@@ -1,4 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon May 13 13:35:44 EDT 2024","Mon May 13 13:35:44 EDT 2024","99","","webdriveruniversity - contact us page","","","","""before each"" hook for webdriveruniversity - contact us page",""
-"passed","Mon May 13 13:35:41 EDT 2024","Mon May 13 13:35:44 EDT 2024","2834","","webdriveruniversity - contact us page","","","","valid submission - submit all information",""
-"passed","Mon May 13 13:35:44 EDT 2024","Mon May 13 13:35:44 EDT 2024","621","","webdriveruniversity - contact us page","","","","invalid submission - dont submit all information",""
+"passed","Tue Jul 30 17:00:17 EDT 2024","Tue Jul 30 17:00:19 EDT 2024","2375","","test","","","","tests test",""

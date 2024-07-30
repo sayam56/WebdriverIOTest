@@ -1,3 +1,0 @@
-{
-  "url": "https://www.webdriveruniversity.com/Contact-Us/contactus.html"
-}
